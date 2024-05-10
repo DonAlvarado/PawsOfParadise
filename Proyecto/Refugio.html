@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Paws Of Paradise</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .navbar {
+            border-bottom: 3px solid purple;
+        }
+        h1, h2, h3 {
+            color: purple;
+        }
+        .bg-dark-custom {
+            background-color: purple !important; /* Fondo morado oscuro */
+        }
+        .text-dark-custom {
+            color: #333;
+        }
+        .bg-light-custom {
+            background-color: #f8f9fa !important; /* Fondo gris claro */
+        }
+        .text-white-custom {
+            color: #fff;
+        }
+        .animated {
+            animation-duration: 1s;
+        }
+        .fadeInUp {
+            animation-name: fadeInUp;
+        }
+        .fadeInLeft {
+            animation-name: fadeInLeft;
+        }
+        .fadeInRight {
+            animation-name: fadeInRight;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        .card {
+            border: 2px solid purple;
+        }
+        .card-title {
+            color: purple;
+        }
+        .card-text {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom">
+            <a class="navbar-brand" href="#"><img src="Images/Logo2.png" height="100" width="100" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#refugio">Refugio</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section id="inicio" class="mt-5 animated fadeInUp">
+            <h1 class="text-center">Instalaciones</h1>
+            <p class="text-center">Te Presentamos las Instalaciones, el lugar donde cada habitante pasa su día mientras se espera encontrar una familia la cual le de una oportunidad!.</p>
+        </section>
+        <hr>
+        <section id="sobre_instalaciones">
+            <h2 class="text-center animated fadeInUp">Sobre Las Instalaciones</h2>
+            <p class="text-center animated fadeInUp">Nuestro refugio, Paws Of Paradise, se extiende sobre un terreno de 5 acres. El diseño del refugio está pensado para proporcionar un ambiente seguro y cómodo para todos nuestros residentes animales.</p>
+            
+            <section id="cuartos" class="row bg-light-custom text-dark-custom align-items-center animated fadeInLeft">
+                <div class="col-md-6 text-center">
+                    <h3>Cuartos de Animales</h3>
+                    <p>Tenemos 5 cuartos espaciosos y bien ventilados para los animales. Cada cuarto puede alojar hasta 5 animales pequeños o 2 animales grandes.</p>
+                </div>
+                <div class="col-md-6 p-3">
+                    <img src="Images/Instalaciones/Cuartos.jpg" class="img-fluid" alt="Cuartos de Animales">
+                </div>
+            </section>
+            <br>
+            <section id="juego" class="row bg-dark-custom text-white-custom align-items-center animated fadeInRight">
+                <div class="col-md-6 text-center">
+                    <h3>Área de Juego al Aire Libre</h3>
+                    <p>Hay un área de juego al aire libre de 2 acres donde los animales pueden correr y jugar.</p>
+                </div>
+                <div class="col-md-6 p-3">
+                    <img src="Images/Instalaciones/Patio.jpeg" class="img-fluid" alt="Área de Juego al Aire Libre">
+                </div>
+            </section>
+            <br>
+            <section id="clinica" class="row bg-light-custom text-dark-custom align-items-center animated fadeInLeft">
+                <div class="col-md-6 text-center">
+                    <h3>Clínica Veterinaria</h3>
+                    <p>Contamos con una clínica veterinaria en el lugar con un veterinario a tiempo completo. La clínica está equipada para manejar emergencias y realizar chequeos regulares.</p>
+                </div>
+                <div class="col-md-6 p-3">
+                    <img src="Images/Instalaciones/Clinica.jpg" class="img-fluid" alt="Clínica Veterinaria">
+                </div>
+            </section>
+            <br>
+            <section id="alimentacion" class="row bg-dark-custom text-white-custom align-items-center animated fadeInRight">
+                <div class="col-md-6 text-center">
+                    <h3>Área de Alimentación</h3>
+                    <p>Tenemos un área de alimentación dedicada donde se preparan y sirven las comidas de los animales.</p>
+                </div>
+                <div class="col-md-6 p-3">
+                    <img src="Images/Instalaciones/Alimentacion.jpg" class="img-fluid" alt="Área de Alimentación">
+                </div>
+            </section>
+            <br>
+            <section id="oficinas" class="row bg-light-custom text-dark-custom align-items-center animated fadeInLeft">
+                <div class="col-md-6 text-center">
+                    <h3>Oficinas Administrativas</h3>
+                    <p>Las oficinas administrativas manejan todas las operaciones y la logística del refugio.</p>
+                </div>
+                <div class="col-md-6 p-3">
+                    <img src="Images/Instalaciones/Oficina.jpeg" class="img-fluid" alt="Oficinas Administrativas">
+                </div>
+            </section>
+            <br>
+            <p class="text-center animated fadeInUp">Estamos comprometidos a proporcionar un ambiente amoroso y saludable para todos nuestros animales hasta que encuentren su hogar definitivo.</p>
+        </section>
+    </main>
+    <footer class="footer mt-auto py-3 bg-dark-custom text-white text-center">
+        <div class="container text-center">
+            <span>© 2024 Paws Of Paradise</span>
+        </div>
+    </footer>
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

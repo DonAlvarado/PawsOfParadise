@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #6c757d;
+}
+
+.navbar {
+    background-color: #e0e0e0;
+}
+  
+.navbar-brand,
+.nav-link {
+    color: #6c757d;
+}
+
+.nav-link {
+    transition: color 0.5s;
+}
+
+.nav-link:hover {
+    color: #343a40;
+}
+
+.card {
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+header {
+    background-color: #6c5b7b; /* Un tono oscuro de morado */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Color blanco para contrastar con el fondo oscuro */
+    transition: color 0.5s; /* Añade una transición suave al cambiar el color */
+}
+
+nav ul li a:hover {
+    color: #e0d7f9; /* Cambia el color a un tono claro de morado cuando el cursor está encima */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #6c5b7b; /* El mismo tono oscuro de morado que el header */
+    text-align: center;
+    padding: 10px;
+    color: #ffffff; /* Color blanco para contrastar con el fondo oscuro */
+}

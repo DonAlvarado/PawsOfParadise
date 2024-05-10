@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contacto - Paws Boutique</title>
+    <!-- CSS de Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <style>
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .navbar {
+            border-bottom: 3px solid purple;
+        }
+        h1, h2, h3 {
+            color: purple;
+        }
+        .bg-dark {
+            background-color: purple !important;
+        }
+        .jumbotron {
+            background-color: #fff;
+            border: 2px solid purple;
+        }
+        .form-control {
+            border-radius: 0;
+        }
+        button[type="submit"] {
+            background-color: purple;
+            border: none;
+        }
+        button[type="submit"]:hover {
+            background-color: #6c009b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><img src="/Images/Logo2.png" height="100" width="100"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section id="contacto" class="mt-5">
+            <div class="jumbotron">
+                <h2 class="display-4">¡Contáctanos!</h2>
+                <p class="lead">¡Estamos aquí para ayudarte! Llámanos o envíanos un correo electrónico.</p>
+                <hr class="my-4">
+                <p>Si quieres contactarnos: +502 1234-5678</p>
+                <form action="/submit_form" method="post" class="animated fadeIn">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="fname">Nombre:</label>
+                            <input type="text" class="form-control" id="fname" name="fname">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lname">Apellido:</label>
+                            <input type="text" class="form-control" id="lname" name="lname">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form> 
+            </div>
+        </section>
+    </main>
+    <footer class="footer mt-auto py-3 bg-dark text-white text-center animate__animated animate__fadeInUp fixed-bottom">
+        <div class="container text-center">
+            <span>© 2024 Paws Of Paradise</span>
+        </div>
+    </footer>
+    <!-- JS de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
