@@ -77,7 +77,7 @@
                                 <li>Donaciones de suministros y alimentos para animales.</li>
                             </ul>
                             <p>¡Tu generosidad nos ayuda a mantener a nuestros residentes felices y saludables!</p>
-                            <button class="btn btn-primary btn-lg donate-btn">¡Haz tu donación ahora!</button>
+                            <button class="btn btn-primary btn-lg donate-btn" data-toggle="modal" data-target="#modalPago">¡Haz tu donación ahora!</button>
                         </div>
                         <div class="col-md-6 text-center">
                             <img src="..\Images/Donation.png" class="img-fluid" alt="Donaciones">
@@ -91,13 +91,74 @@
     </main>
     <br>
     <br>
-    <footer class="footer mt-auto py-3 bg-dark text-white text-center animate__animated animate__fadeInUp fixed-bottom">
+    <footer class="footer mt-auto py-3 bg-dark text-white text-center fixed-bottom">
         <div class="container text-center">
             <span>© 2024 Paws Of Paradise</span>
         </div>
     </footer>
+
+    <!-- Modal de Pago -->
+    <div class="modal fade" id="modalPago" tabindex="-1" role="dialog" aria-labelledby="modalPagoLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalPagoLabel">Seleccione su método de pago</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <!-- Selección de método de pago -->
+            <p>Seleccione su método de pago:</p>
+            <input type="radio" id="pagoEfectivo" name="pago" value="efectivo">
+            <label for="pagoEfectivo">Efectivo</label><br>
+            <input type="radio" id="pagoTarjeta" name="pago" value="tarjeta">
+            <label for="pagoTarjeta">Tarjeta de crédito</label><br>
+            <div id="formTarjeta" style="display: none;">
+            <hr>
+            <h5>Ingrese los datos de su tarjeta:</h5>
+            <div class="form-group">
+                <label for="numeroTarjeta">Número de Tarjeta:</label>
+                <input type="text" class="form-control" id="numeroTarjeta" placeholder="Ingrese el número de tarjeta">
+            </div>
+            <div class="form-group">
+                <label for="fechaVencimiento">Fecha de Vencimiento:</label>
+                <input type="text" class="form-control" id="fechaVencimiento" placeholder="MM/YY">
+            </div>
+            <div class="form-group">
+                <label for="codigoSeguridad">Código de Seguridad:</label>
+                <input type="text" class="form-control" id="codigoSeguridad" placeholder="CVV">
+            </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <!-- Botón para simular el envío del formulario de pago -->
+            <button type="button" class="btn btn-primary" id="btnPagar">Pagar</button>
+        </div>
+        </div>
     <!-- JS de Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+      // JavaScript para mostrar el formulario de tarjeta cuando se selecciona "Tarjeta de crédito"
+    $(document).ready(function() {
+        $('input[type=radio][name=pago]').change(function() {
+        if (this.value === 'tarjeta') {
+            $('#formTarjeta').show();
+        } else {
+            $('#formTarjeta').hide();
+        }
+        });
+
+        // Simulación del proceso de pago
+        $('#btnPagar').click(function() {
+          // Aquí puedes agregar la lógica para procesar los datos de la tarjeta
+          // Por ejemplo, validación de campos, envío de datos a un servidor, etc.
+        alert('Pago realizado correctamente');
+        $('#modalPago').modal('hide');
+        });
+    });
+    </script>
 </body>
 </html>

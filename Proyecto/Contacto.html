@@ -33,6 +33,31 @@
         button[type="submit"]:hover {
             background-color: #6c009b;
         }
+        /* Animación solo para el main */
+        main.container {
+            opacity: 0;
+            animation: fadeInUp 0.5s forwards;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Estilo para fijar el footer */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: purple;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
     </style>
 </head>
 <body>
@@ -61,7 +86,7 @@
                 <p class="lead">¡Estamos aquí para ayudarte! Llámanos o envíanos un correo electrónico.</p>
                 <hr class="my-4">
                 <p>Si quieres contactarnos: +502 1234-5678</p>
-                <form action="/submit_form" method="post" class="animated fadeIn">
+                <form action="/submit_form" method="post">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="fname">Nombre:</label>
@@ -85,7 +110,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer mt-auto py-3 bg-dark text-white text-center animate__animated animate__fadeInUp fixed-bottom">
+    <footer class="footer bg-dark text-white">
         <div class="container text-center">
             <span>© 2024 Paws Of Paradise</span>
         </div>

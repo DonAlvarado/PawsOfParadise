@@ -15,13 +15,12 @@ let Habitantes = [
     { id: 14, nombre: 'Habitante 14', descripcion: 'Descripción del Habitante 14', imagen: 'url_de_la_imagen_14' },
     { id: 15, nombre: 'Habitante 15', descripcion: 'Descripción del Habitante 15', imagen: 'url_de_la_imagen_15' }
 ];
-
 let row;
 Habitantes.forEach((habitante, index) => {
     if (index % 3 === 0) {
         row = document.createElement('div');
         row.className = 'row justify-content-center';
-        document.body.appendChild(row);
+        document.getElementById('habitantesRow').appendChild(row);
     }
 
     let habitanteElemento = document.createElement('div');

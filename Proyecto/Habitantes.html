@@ -78,6 +78,40 @@
             overflow-y: auto;
             padding: 20px;
             display: none;
+            animation: fadeInUp 0.5s forwards;
+        }
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: purple;
+            color: white;
+        }
+        /* Ajustes para mostrar los habitantes en tres columnas */
+        #habitantesRow .col-sm-4 {
+            max-width: 400px; /* Ajustamos el ancho máximo de las tarjetas */
+            margin: auto; /* Centra los habitantes */
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate__animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        .animate__fadeInUp {
+            opacity: 0;
+            animation-name: fadeInUp;
         }
     </style>
 </head>
@@ -100,21 +134,22 @@
             </div>
         </nav>
     </header>
-    <main class="container">
-        <section id="inicio" class="animate__animated animate__fadeInUp">
+    <main class="container animate__animated animate__fadeInUp">
+        <section id="inicio">
             <h1 class="mt-5">¡Conoce a nuestros Habitantes!</h1>
             <p>En el refugio podemos encontrar a una gran variedad de amiguitos los cuales están en búsqueda de una nueva familia.</p>
         </section>
         <hr>
-        <section id="Animales" class="animate__animated animate__fadeInUp">
+        <section id="habitantes">
             <h2>Habitantes</h2>
-            <p>Te presentamos a nuestros habitantes: </p>
-            <div class="row" id="habitantesRow">
-            <script src="Habitantes.js"></script>
+            <p>Te presentamos a nuestros habitantes:</p>
+            <div class="row justify-content-center" id="habitantesRow">
+                <script src="Habitantes.js"></script>
+            </div>
         </section>
         <hr>
     </main>
-    <footer class="footer mt-auto py-3 bg-dark text-white text-center animate__animated animate__fadeInUp">
+    <footer class="footer mt-auto py-3 bg-dark text-white text-center">
         <div class="container text-center">
             <span>© 2024 Paws Of Paradise</span>
         </div>
@@ -122,6 +157,6 @@
     <!-- JS de Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="Habitantes.js"></script>
+    <!-- Aquí puedes incluir cualquier otro script necesario -->
 </body>
 </html>

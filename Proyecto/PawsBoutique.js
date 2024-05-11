@@ -1,4 +1,4 @@
-// Definición de productos disponibles
+// Arreglo de productos disponibles
 let productos = [
     { id: 1, nombre: "Producto 1", precio: 10.00 },
     { id: 2, nombre: "Producto 2", precio: 15.00 },
@@ -51,11 +51,11 @@ function comprar() {
 // Función para mostrar u ocultar el carrito
 function toggleCart() {
     let cartContent = document.getElementById('cartContent');
-    if (cartContent.style.display === 'block') {
-        cartContent.style.display = 'none';
-    } else {
+    if (cartContent.style.display === 'none' || cartContent.style.display === '') {
         cartContent.style.display = 'block';
         mostrarCarrito();
+    } else {
+        cartContent.style.display = 'none';
     }
 }
 
