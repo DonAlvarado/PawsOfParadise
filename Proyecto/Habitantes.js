@@ -1,19 +1,19 @@
 let Habitantes = [
-    { id: 1, nombre: 'Habitante 1', descripcion: 'Descripción del Habitante 1', imagen: 'url_de_la_imagen_1' },
-    { id: 2, nombre: 'Habitante 2', descripcion: 'Descripción del Habitante 2', imagen: 'url_de_la_imagen_2' },
-    { id: 3, nombre: 'Habitante 3', descripcion: 'Descripción del Habitante 3', imagen: 'url_de_la_imagen_3' },
-    { id: 4, nombre: 'Habitante 4', descripcion: 'Descripción del Habitante 4', imagen: 'url_de_la_imagen_4' },
-    { id: 5, nombre: 'Habitante 5', descripcion: 'Descripción del Habitante 5', imagen: 'url_de_la_imagen_5' },
-    { id: 6, nombre: 'Habitante 6', descripcion: 'Descripción del Habitante 6', imagen: 'url_de_la_imagen_6' },
-    { id: 7, nombre: 'Habitante 7', descripcion: 'Descripción del Habitante 7', imagen: 'url_de_la_imagen_7' },
-    { id: 8, nombre: 'Habitante 8', descripcion: 'Descripción del Habitante 8', imagen: 'url_de_la_imagen_8' },
-    { id: 9, nombre: 'Habitante 9', descripcion: 'Descripción del Habitante 9', imagen: 'url_de_la_imagen_9' },
-    { id: 10, nombre: 'Habitante 10', descripcion: 'Descripción del Habitante 10', imagen: 'url_de_la_imagen_10' },
-    { id: 11, nombre: 'Habitante 11', descripcion: 'Descripción del Habitante 11', imagen: 'url_de_la_imagen_11' },
-    { id: 12, nombre: 'Habitante 12', descripcion: 'Descripción del Habitante 12', imagen: 'url_de_la_imagen_12' },
-    { id: 13, nombre: 'Habitante 13', descripcion: 'Descripción del Habitante 13', imagen: 'url_de_la_imagen_13' },
-    { id: 14, nombre: 'Habitante 14', descripcion: 'Descripción del Habitante 14', imagen: 'url_de_la_imagen_14' },
-    { id: 15, nombre: 'Habitante 15', descripcion: 'Descripción del Habitante 15', imagen: 'url_de_la_imagen_15' }
+    { id: 1, nombre: 'Alberto', descripcion: 'Alberto es un perro amistoso y enérgico que siempre está listo para jugar y dar largos paseos por el parque.', imagen: '../Images/Habitantes/habitante1.png' },
+    { id: 2, nombre: 'Albondiga', descripcion: 'Albondiga es un perro de raza mixta con una personalidad encantadora. Le encanta pasar el tiempo con su familia humana y recibir mimos.', imagen: '../Images/Habitantes/habitante2.png' },
+    { id: 3, nombre: 'Romeo', descripcion: 'Romeo es un perro dulce y cariñoso que busca un hogar donde pueda ser el compañero leal de alguien para siempre.', imagen: '../Images/Habitantes/habitante3.png' },
+    { id: 4, nombre: 'Lechuga', descripcion: ' Lechuga es un gato curioso y juguetón que disfruta explorando cada rincón de su hogar y tomando largas siestas al sol.', imagen: '../Images/Habitantes/habitante4.png' },
+    { id: 5, nombre: 'Elsa', descripcion: 'Elsa es una gata elegante y tranquila que disfruta de la compañía tranquila y las caricias suaves.', imagen: '../Images/Habitantes/habitante5.png' },
+    { id: 6, nombre: 'Pamela', descripcion: 'Pamela es una gata traviesa y juguetona que siempre está buscando nuevas aventuras en casa.', imagen: '../Images/Habitantes/habitante6.png' },
+    { id: 7, nombre: 'Rango', descripcion: 'Rango es una tortuga tranquila y relajada que disfruta tomando el sol y explorando su entorno con calma.', imagen: '../Images/Habitantes/habitante7.jpg' },
+    { id: 8, nombre: 'Raptor', descripcion: 'Raptor es una tortuga activa y curiosa que disfruta explorando su terrario y descubriendo nuevas delicias para comer.', imagen: '../Images/Habitantes/habitante8.png' },
+    { id: 9, nombre: 'Mantequilla', descripcion: 'Mantequilla es un perro cariñoso y leal que siempre está listo para brindar amor y compañía a su familia.', imagen: '../Images/Habitantes/habitante9.png' },
+    { id: 10, nombre: 'Twinkie', descripcion: 'Twinkie es un conejo juguetón y curioso que le encanta saltar y explorar su entorno en busca de aventuras.', imagen: '../Images/Habitantes/habitante10.png' },
+    { id: 11, nombre: 'Oreo', descripcion: 'Oreo es un conejo tranquilo y relajado que disfruta de largos períodos de descanso y de comer sus alimentos favoritos.', imagen: '../Images/Habitantes/habitante11.png' },
+    { id: 12, nombre: 'Blanquita', descripcion: 'Blanquita es una conejita dulce y afectuosa que adora recibir caricias y mimos de sus humanos.', imagen: '../Images/Habitantes/habitante12.png' },
+    { id: 13, nombre: 'Don Cuervo', descripcion: 'Don Cuervo es una cobaya cariñosa y curiosa que disfruta explorando su entorno y socializando con sus compañeros de jaula.', imagen: '../Images/Habitantes/habitante13.png' },
+    { id: 14, nombre: 'Tontin', descripcion: 'Tontin es una cobaya juguetona y enérgica que siempre está lista para correr y explorar su entorno.', imagen: '../Images/Habitantes/habitante14.png' },
+    { id: 15, nombre: 'Manguito', descripcion: 'Destructora de mundos, capaz de comer fruta y verdura a una velocidad de: 1mpg (manguito por hora.)', imagen: '../Images/Habitantes/habitante15.png' }
 ];
 let row;
 Habitantes.forEach((habitante, index) => {

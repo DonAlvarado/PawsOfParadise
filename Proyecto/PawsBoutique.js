@@ -1,21 +1,20 @@
 // Arreglo de productos disponibles
 let productos = [
-    { id: 1, nombre: "Producto 1", precio: 10.00 },
-    { id: 2, nombre: "Producto 2", precio: 15.00 },
-    { id: 3, nombre: "Producto 3", precio: 20.00 },
-    { id: 4, nombre: "Producto 4", precio: 20.00 },
-    { id: 5, nombre: "Producto 5", precio: 20.00 },
-    { id: 6, nombre: "Producto 6", precio: 20.00 },
-    { id: 7, nombre: "Producto 7", precio: 20.00 },
-    { id: 8, nombre: "Producto 8", precio: 20.00 },
-    { id: 9, nombre: "Producto 9", precio: 20.00 },
-    { id: 10, nombre: "Producto 10", precio: 20.00 },
-    { id: 11, nombre: "Producto 11", precio: 20.00 },
-    { id: 12, nombre: "Producto 12", precio: 20.00 },
-    { id: 13, nombre: "Producto 13", precio: 20.00 },
-    { id: 14, nombre: "Producto 14", precio: 20.00 },
-    { id: 15, nombre: "Producto 15", precio: 20.00 }
-    // Agrega más productos según sea necesario
+    { id: 1, nombre: "Producto 1", precio: 12.00, imagen: "..\Images/Productos/Producto1.png"  },
+    { id: 2, nombre: "Producto 2", precio: 15.00, imagen: "..\Images/Productos/Producto2.png"  },
+    { id: 3, nombre: "Producto 3", precio: 25.00, imagen: "..\Images/Productos/Producto3.png"  },
+    { id: 4, nombre: "Producto 4", precio: 20.00, imagen: "..\Images/Productos/Producto4.png"  },
+    { id: 5, nombre: "Producto 5", precio: 27.00, imagen: "..\Images/Productos/Producto5.png"  },
+    { id: 6, nombre: "Producto 6", precio: 20.00, imagen: "..\Images/Productos/Producto6.png"  },
+    { id: 7, nombre: "Producto 7", precio: 15.00, imagen: "..\Images/Productos/Producto7.png"  },
+    { id: 8, nombre: "Producto 8", precio: 312.00, imagen: "..\Images/Productos/Producto8.png"  },
+    { id: 9, nombre: "Producto 9", precio: 20.00, imagen: "..\Images/Productos/Producto9.png"  },
+    { id: 10, nombre: "Producto 10", precio: 36.00, imagen: "..\Images/Productos/Producto10.png"  },
+    { id: 11, nombre: "Producto 11", precio: 345.00, imagen: "..\Images/Productos/Producto11.png"  },
+    { id: 12, nombre: "Producto 12", precio: 67.00, imagen: "..\Images/Productos/Producto12.png"  },
+    { id: 13, nombre: "Producto 13", precio: 21.00, imagen: "..\Images/Productos/Producto13.png"  },
+    { id: 14, nombre: "Producto 14", precio: 27.00, imagen: "..\Images/Productos/Producto14.png"  },
+    { id: 15, nombre: "Producto 15", precio: 32.00, imagen: "..\Images/Productos/Producto15.png"  }
 ];
 
 // Variable para almacenar los productos agregados al carrito

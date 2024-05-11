@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
     <title>Paws Of Paradise</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -17,6 +18,10 @@
         }
         .bg-dark {
             background-color: purple !important;
+        }
+        #map {
+            height: 400px;
+            width: 100%;
         }
     </style>
 </head>
@@ -71,6 +76,42 @@
                 </div>
             </div>
         </section>
+        <hr>
+        <section id="adopcion">
+            <h2>Adopción</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>En Paws Of Paradise, creemos que cada mascota merece un hogar amoroso y permanente. Nuestro proceso de adopción es simple y diseñado para garantizar el mejor ajuste entre el animal y su nueva familia.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="Images/Adopcion.jpg" class="img-fluid" alt="Imagen Adopcion">
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="voluntariado">
+            <h2>Voluntariado</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Nuestro refugio depende del apoyo y la ayuda de voluntarios dedicados. Si estás interesado en ayudar a cuidar y socializar con nuestros residentes peludos, ¡únete a nuestro equipo de voluntarios hoy mismo!</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="Images/Voluntariado.jpg" class="img-fluid" alt="Imagen Voluntariado">
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="Ubicacion">
+            <h2>Ubicación</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Nos Localizamos en la zona 10 de la Ciudad Capital de Guatemala, 6A Avenida 1617-1477 </p>
+                </div>
+                <div id="map"></div>
+            </div>
+            <br>
+            <br>
+        </section>
     </main>
     <br>
     <footer class="footer mt-auto py-3 bg-dark text-white text-center animate__animated animate__fadeInUp fixed-bottom">
@@ -81,5 +122,20 @@
     <!-- JS de Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        function initMap() {
+            var refugio = {lat: 14.597105, lng: -90.517833};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 17,
+                center: refugio
+            });
+            var marker = new google.maps.Marker({
+                position: refugio,
+                map: map,
+                title: 'Paws Of Paradise'
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API&callback=initMap"></script>
 </body>
 </html>

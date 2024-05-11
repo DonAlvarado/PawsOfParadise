@@ -34,6 +34,8 @@
         .card-img-top {
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
+            max-height: 200px; /* Establece el máximo alto de la imagen */
+            object-fit: cover; /* Ajusta la imagen para que cubra el contenedor manteniendo la relación de aspecto */
         }
         .card-body {
             padding: 20px;
@@ -88,9 +90,17 @@
             color: white;
         }
         /* Ajustes para mostrar los habitantes en tres columnas */
-        #habitantesRow .col-sm-4 {
-            max-width: 400px; /* Ajustamos el ancho máximo de las tarjetas */
-            margin: auto; /* Centra los habitantes */
+        #habitantesRow {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start; /* Alinear las cartas arriba */
+        }
+
+        .col-sm-4.mb-4 {
+            flex: 0 0 30%; /* Establecer el ancho de las cartas */
+            max-width: 30%; /* Establecer el ancho máximo de las cartas */
+            margin-bottom: 30px; /* Espacio entre las cartas */
         }
         
         @keyframes fadeInUp {
